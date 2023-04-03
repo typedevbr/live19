@@ -74,7 +74,7 @@ body {
   margin-bottom: 24px;
 }
 
-.card__rating__number {
+.card__rating-number {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,13 +85,13 @@ body {
   transition: linear 0.2s;
 }
 
-.card__rating__number:hover {
+.card__rating-number:hover {
   background-color: var(--orange);
   color: var(--white);
   cursor: pointer;
 }
 
-.card__rating__number--active {
+.card__rating-number--active {
   background-color: var(--medium-gray);
   color: var(--white);
 }
@@ -137,6 +137,7 @@ body {
   height: 32px;
   margin: auto;
   margin-bottom: 24px;
+  padding-top: 4px;
 }
 
 @media screen and (min-width: 600px) {
@@ -162,7 +163,7 @@ body {
     height: 48px;
   }
 
-  .card__rating__number {   
+  .card__rating-number {   
     width: 51px;
     height: 51px;
     font-size: 16px;

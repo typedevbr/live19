@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <!-- Rating state start -->
-    <div class="card card--main hide">
+    <div class="card card--main">
       <div class="card__icon">
         <img src="/images/icon-star.svg" alt="star image">
       </div>
@@ -24,27 +24,27 @@
         to help us improve our offering!</p>
 
       <div class="card__rating">
-        <div class="card__rating__number">1</div>
-        <div class="card__rating__number card__rating__number--active">2</div>
-        <div class="card__rating__number">3</div>
-        <div class="card__rating__number">4</div>
-        <div class="card__rating__number">5</div>
+        <div class="card__rating-number" onclick="selectRating(1)">1</div>
+        <div class="card__rating-number" onclick="selectRating(2)">2</div>
+        <div class="card__rating-number" onclick="selectRating(3)">3</div>
+        <div class="card__rating-number" onclick="selectRating(4)">4</div>
+        <div class="card__rating-number" onclick="selectRating(5)">5</div>
       </div>
 
-      <button class="card__btn">Submit</button>
+      <button class="card__btn" onclick="submit()">Submit</button>
     </div>
     <!-- Rating state end -->
 
 
     <!-- Thank you state start -->
-    <div class="card card--thank-you" >
+    <div class="card card--thank-you hide" >
       <img 
         class="card__image"
         src="/images/illustration-thank-you.svg" 
         alt="thank you image"
       >
 
-      <div class="card__result">You selected&nbsp;<span class="card__result__value">1</span>&nbsp;out of 5</div>
+      <div class="card__result">You selected&nbsp;<span class="card__result-value">1</span>&nbsp;out of 5</div>
 
       <h2 class="card__title">Thank you!</h2>
 
@@ -53,6 +53,8 @@
     </div>
 
   </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
